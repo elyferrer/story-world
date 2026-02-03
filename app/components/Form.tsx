@@ -67,7 +67,7 @@ const Form = ({ selected } : { selected: any }) => {
                     className='px-3 py-1' autoComplete='off' />
                 <textarea name="synopsis" id="synopsis" onChange={handleChange} value={formData.synopsis} placeholder='Enter Synopsis'
                     className='px-3 py-1 resize-none' autoComplete='off'></textarea>
-                <button type='submit' className='bg-blue-600 text-white cursor-pointer px-3 py-1 rounded'>Create</button>
+                <button type='submit' className='bg-blue-600 text-white cursor-pointer px-3 py-1 rounded'>{ storyId ? 'Update' : 'Create'} </button>
             </form>
             
         </div>
